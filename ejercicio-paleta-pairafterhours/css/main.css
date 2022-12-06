@@ -1,0 +1,61 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+  }
+  
+  .favourites {
+    min-height: 65vh;
+    border-left: solid 1px darkgrey;
+    padding: 0 1em;
+  }
+  
+  .spaceshipslist {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  .favourites .spaceshipslist {
+    margin: 2em 0 0 0;
+  }
+  
+  .spaceship {
+    padding: 1em;
+    width: calc(210px + 1em);
+    cursor: pointer;
+  }
+  
+  .spaceship.selected {
+    background-color: darkcyan;
+    color: white;
+  }
+  
+  .spaceship.selected .spaceship__title {
+    color: white;
+  }
+  
+  .spaceship .spaceship__colorslist {
+    list-style-type: none;
+    margin: 0.5em;
+    border: solid 5px lightgray;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .spaceship .spaceship__color {
+    width: 40px;
+    height: 40px;
+  }
+  
